@@ -1,0 +1,22 @@
+{
+  "extends": ["airbnb-base", "prettier", "plugin:mocha/recommended"],
+  "plugins": ["prettier", "mocha"],
+  "rules": {
+    "prettier/prettier": "error",
+    "func-names": "off",
+    "max-len": ["error", 80]
+  },
+  "env": {
+    "commonjs": true,
+    "node": true,
+    "mocha": true
+  },
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}
